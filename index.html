@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=header, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Slackey&display=swap" rel="stylesheet">
+    <title>Rick&Morty</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <header>
+        <div class="titulo">
+            <!--logo Rick y Morty, pin redondo -->
+            <img class="logo"
+                src="https://hbomax-images.warnermediacdn.com/2022-08/tt.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com"
+                alt="Logo Rick y Morty verde">
+            <img class="pin"
+                src="https://rlv.zcache.es/pegatina_redonda_riqueza_y_morty_rick_morty_y_summer-rb7f2d10ababe4a199eb8932024969841_0ugmp_8byvr_736.jpg"
+                alt="Imagen circular Rick y Morty">
+        </div>
+    </header>
+
+<body>
+    <main><!--navegador-->
+        <div class="nav-bar" id="nav-bar">
+            <nav>
+                <ul class="nav">
+                    <li><a name="sinopsis-text" href="#sinopsis-text">sinopsis</a></li>
+                    <li><a name="personajes" href="#personajes">personajes</a></li>
+                    <li><a name="ver-serie" href="#ver-serie">capitulos</a></li>
+                    <li><a name="contacto" href="#contacto">contacto</a></li>
+                </ul>
+            </nav>
+        </div><!--Comienzo de seccion "sinopsis"-->
+        <section id="sinopsis-text" class="sinopsis-text">
+            <div class="data">
+                <h2>Sinopsis</h2>
+                <p>Rick Sánchez es un ejemplo del típico "científico loco". Es un genio, pero es irresponsable,
+                    alcohólico, egoísta, un
+                    poco depresivo y con poca cordura. Rick por diferentes razones termina mudándose a la casa de su
+                    hija Beth y en ese
+                    momento se encuentra con su nieto Morty; un chico de 14 años de edad, tímido y no muy listo. Al
+                    juntarse con su nieto,
+                    Rick y Morty viven una variedad de aventuras a lo largo del cosmos y universos paralelos. Y es
+                    mediante tantas vivencias
+                    y reflexiones que Rick busca que su nieto Morty no acabe como su padre, Jerry, un hombre muy poco
+                    exitoso que a pesar de
+                    tener buenas intenciones resulta ser bastante inútil en muchas ocasiones y depende mucho de su
+                    esposa, Beth, hija de
+                    Rick.
+
+                    A pesar de estar muy apegados, Rick y su nieto experimentan momentos en los que Summer, hermana de
+                    Morty, se une en
+                    ocasiones a las pintorescas aventuras provocadas por Rick</p>
+                <p>° Created by Justin Roiland & Dan Harmon</p>
+                <p>° Release: 2013</p>
+                <p>° Country of origin: USA</p>
+            </div><!--imagen rectangular vertical"-->
+            <div><img class="banner" src="https://numpaint.com/wp-content/uploads/2020/07/0IMG-2004.jpg"
+                    alt="Imagen sinopsis, Rick y Morty"></div>
+        </section>
+        <!--Comienzo de seccion "personajes, Js que consume API"-->
+        <section id="personajes" class="personajes"></section>
+        <h2 class="character">Personajes</h2>
+        <div id="container-grid" class="container-grid"></div>
+        </section>
+
+        <section><!--Comienzo de seccion "ver-serie"-->
+            <div id="ver-serie" class="ver-serie">
+                <h2>ver serie</h2>
+                <!--Logo hbo max-->
+                <a class="boton" href="https://www.hbomax.com/ar/es/series/urn:hbo:series:GXkRjxwjR68PDwwEAABKJ"><img
+                        class="hbo"
+                        src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2021/11/logo-hbo-max-2538085.jpg?itok=SNNDP-5F"
+                        alt="logo HBO"></a>
+                <p>All 6 seasons of Rick and Morty are available on HBO Max. It has a total of 61 episodes.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer><!--Comienzo de seccion "contacto"-->
+        <section class="final">
+            <div class="info">
+                <h3>Made by Raquel Klatt</h3>
+                <p>Introduction to Frontend</p>
+                <p>Abril-2023</p>
+                <p>Argentina Programa 4.0 - UTN</p>
+                <p>Profesor: Gabriel Alberini</p>
+            </div>
+            <div id="contacto" class="logos"><!--logotipos redes sociales"-->
+                <p>Github</p><a href="https://github.com/juanker73/inmente"><img class="git"
+                        src="data:image/png;base64,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"
+                        alt=""></a>
+                <p>facebook</p><a
+                    href="https://m.facebook.com/JuanManuelEme?eav=AfbSjd3IgdHPZVqDpXwOYnPCMR-9poJkU8SQPkI6C41tOZfLzG1viRfobAo5x0P9sEQ&paipv=0"><img
+                        class="fac"
+                        src="data:image/png;base64,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"
+                        alt=""></a>
+            </div>
+        </section>
+
+    </footer>
+    <!--script de enlace a javascript-->
+    <script src="app.js"></script>
+</body>
+
+</html>
